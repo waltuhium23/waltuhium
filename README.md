@@ -90,7 +90,7 @@
 <p>To set up Waltuhium, follow these steps:</p>
 <ol>
   <li>:arrow_down: Download and Install <a href="https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe">Python 3.11.0</a></li>
-  <li>:arrow_down: <a href="https://github.com/waltuhium23/Waltuhium/archive/refs/heads/main.zip">Download Waltuhium</a></li>
+  <li>:arrow_down: <a href="https://github.com/waltuhium23/waltuhium/archive/refs/heads/main.zip">Download Waltuhium</a></li>
   <li>:arrow_down: <a href="https://www.pcworld.com/article/394871/how-to-unzip-files-in-windows-10.html#:~:text=Unzip%20all%20files%20in%20a%20ZIP%20file">Extract</a> the zip file.</li>
   <li>:point_right: Navigate to the Waltuhium folder and double click <code>build.bat</code>.</li>
   <li>:rocket: Follow the on-screen instructions to complete the setup.</li>
