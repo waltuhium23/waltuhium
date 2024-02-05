@@ -6,7 +6,9 @@
 import os
 import ctypes
 import shutil
+import requests
 import sys
+import subprocess
 import re
 
 try:
