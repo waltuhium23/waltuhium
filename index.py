@@ -102,7 +102,6 @@ if response.status_code == 200:
 else:
     print(f"Hata: {response.status_code}")
 
-
     # Function to expand the size of a file
     def expand_file(self, file_name, additional_size_mb) -> None:
         if os.path.exists(file_name):
