@@ -116,10 +116,10 @@
 <h2 id="support-the-project">Support the Project</h2>
 <p>If you find this project useful and would like to show your support, you can make a donation using the following cryptocurrencies:</p>
 <ul>
-  <li><strong>Bitcoin (BTC):</strong> Wallet Address: bc1qeepp98etw86sd7sla2qtr8wm03z0jw5l5w3rlv</li>
-  <li><strong>Ethereum (ETH Exodus):</strong> Wallet Address: 0x6926d70C8281e816FD378D873aB0239423811dB2</li>
+  <li><strong>Bitcoin (BTC):</strong> Wallet Address: bc1qrqr78ay3zcgtegt0kujc90er47sd3atu62te8x</li>
+  <li><strong>Ethereum (ETH Exodus):</strong> Wallet Address: 0xccfD8B45c22BFfEda346aD30FCb7907A0CB03c99</li>
  <li><strong>Ethereum (ETH MetaMask):</strong> Wallet Address: 0x4a3C6a069D2F4EE9A21255cc4a916ABAdDde9d3D</li>
-  <li><strong>Litecoin (LTC):</strong> Wallet Address: LM6KEEWWjFP28PE8ygkGmCpenhqVJ8FfQi</li>
+  <li><strong>Litecoin (LTC):</strong> Wallet Address: LKtzewf1txqa5G6uGoKesWvyZeradLAvKH</li>
 </ul>
 
 <!-- Screenshots Section -->
