@@ -8,7 +8,7 @@
 
 <p align="center"> 
   <kbd>
-<img src="https://cdn.discordapp.com/attachments/1206721383820820553/1210999941841813535/waltuh.jpg?ex=65ec9a95&is=65da2595&hm=6831fa2bb31a6414cecdabe6720397ceb701638c79c6e3b28ddd0823743decd0&" width="328"></img>
+<img src="https://hizliresim.com/ron555c" width="328"></img>
   </kbd>
 </p>
 
@@ -124,14 +124,14 @@
 
 <!-- Screenshots Section -->
 <h2 id="screenshots">Screenshots 📸</h2>
-<img src="https://media.discordapp.net/attachments/1192191430827970571/1196954510577389588/Ekran_goruntusu_2024-01-17_014259.png" alt="Application Screenshot">
-<img src="https://media.discordapp.net/attachments/1192191430827970571/1196954511563038800/Ekran_goruntusu_2024-01-17_014342.png" alt="Application Screenshot">
-<img src="https://media.discordapp.net/attachments/1192191430827970571/1197570381213610065/Ekran_goruntusu_2024-01-18_005223.png" alt="Application Screenshot">
-<img src="https://media.discordapp.net/attachments/1192191430827970571/1197570380987125861/Ekran_goruntusu_2024-01-17_1939551.png" alt="Application Screenshot">
-<img src="https://media.discordapp.net/attachments/1192191430827970571/1196954510808064113/Ekran_goruntusu_2024-01-17_014310.png" alt="Application Screenshot">
-<img src="https://media.discordapp.net/attachments/1192191430827970571/1196954511030353930/Ekran_goruntusu_2024-01-17_014319.png" alt="Application Screenshot">
-<img src="https://media.discordapp.net/attachments/1192191430827970571/1196954511269449869/Ekran_goruntusu_2024-01-17_014328.png" alt="Application Screenshot">
-<img src="https://media.discordapp.net/attachments/1192191430827970571/1196955615357042839/Ekran_goruntusu_2024-01-17_021324.png" alt="Application Screenshot">
+<img src="https://hizliresim.com/h0yb98p" alt="Application Screenshot">
+<img src="https://hizliresim.com/ifwikzc" alt="Application Screenshot">
+<img src="https://hizliresim.com/cdhlojt" alt="Application Screenshot">
+<img src="https://hizliresim.com/taf4ahz" alt="Application Screenshot">
+<img src="https://hizliresim.com/3oidego" alt="Application Screenshot">
+<img src="https://hizliresim.com/rfpo6s3" alt="Application Screenshot">
+<img src="https://hizliresim.com/9fm34rs" alt="Application Screenshot">
+<img src="https://hizliresim.com/nt303hy" alt="Application Screenshot">
 <img src="https://camo.githubusercontent.com/d68dcb24f480ccfcd376b6bbedfffec5bbeaf836983ed35636357bb6498bcc30/68747470733a2f2f692e696d6775722e636f6d2f684672797561522e706e67" alt="Application Screenshot">
 
 
