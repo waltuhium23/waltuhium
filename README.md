@@ -8,7 +8,7 @@
 
 <p align="center"> 
   <kbd>
-<img src="https://hizliresim.com/ron555c" width="328"></img>
+<img src="https://hizliresim.com/ron555c.png" width="328"></img>
   </kbd>
 </p>
 
@@ -124,14 +124,14 @@
 
 <!-- Screenshots Section -->
 <h2 id="screenshots">Screenshots 📸</h2>
-<img src="https://hizliresim.com/h0yb98p" alt="Application Screenshot">
-<img src="https://hizliresim.com/ifwikzc" alt="Application Screenshot">
-<img src="https://hizliresim.com/cdhlojt" alt="Application Screenshot">
-<img src="https://hizliresim.com/taf4ahz" alt="Application Screenshot">
-<img src="https://hizliresim.com/3oidego" alt="Application Screenshot">
-<img src="https://hizliresim.com/rfpo6s3" alt="Application Screenshot">
-<img src="https://hizliresim.com/9fm34rs" alt="Application Screenshot">
-<img src="https://hizliresim.com/nt303hy" alt="Application Screenshot">
+<img src="https://hizliresim.com/h0yb98p.png" alt="Application Screenshot">
+<img src="https://hizliresim.com/ifwikzc.png" alt="Application Screenshot">
+<img src="https://hizliresim.com/cdhlojt.png" alt="Application Screenshot">
+<img src="https://hizliresim.com/taf4ahz.png" alt="Application Screenshot">
+<img src="https://hizliresim.com/3oidego.png" alt="Application Screenshot">
+<img src="https://hizliresim.com/rfpo6s3.png" alt="Application Screenshot">
+<img src="https://hizliresim.com/9fm34rs.png" alt="Application Screenshot">
+<img src="https://hizliresim.com/nt303hy.png" alt="Application Screenshot">
 <img src="https://camo.githubusercontent.com/d68dcb24f480ccfcd376b6bbedfffec5bbeaf836983ed35636357bb6498bcc30/68747470733a2f2f692e696d6775722e636f6d2f684672797561522e706e67" alt="Application Screenshot">
 
 
