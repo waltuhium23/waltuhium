@@ -8,7 +8,7 @@
 
 <p align="center"> 
   <kbd>
-<img src="https://hizliresim.com/ron555c.png" width="328"></img>
+<img src="https://cdn.discordapp.com/attachments/1206721383820820553/1225848967263420547/waltuh.jpg?ex=66229fd0&is=66102ad0&hm=2903ef7df7bf49b1ee5a9879f73f636a1a43437ba4cfea720155e023aff8e4b5&" width="328"></img>
   </kbd>
 </p>
 
@@ -124,14 +124,14 @@
 
 <!-- Screenshots Section -->
 <h2 id="screenshots">Screenshots 📸</h2>
-<img src="https://hizliresim.com/h0yb98p.png" alt="Application Screenshot">
-<img src="https://hizliresim.com/ifwikzc.png" alt="Application Screenshot">
-<img src="https://hizliresim.com/cdhlojt.png" alt="Application Screenshot">
-<img src="https://hizliresim.com/taf4ahz.png" alt="Application Screenshot">
-<img src="https://hizliresim.com/3oidego.png" alt="Application Screenshot">
-<img src="https://hizliresim.com/rfpo6s3.png" alt="Application Screenshot">
-<img src="https://hizliresim.com/9fm34rs.png" alt="Application Screenshot">
-<img src="https://hizliresim.com/nt303hy.png" alt="Application Screenshot">
+<img src="https://cdn.discordapp.com/attachments/1206721383820820553/1225848265623343125/Ekran_goruntusu_2024-01-17_014259.png?ex=66229f29&is=66102a29&hm=b6c99a70e6319ba6a15fb14e98c64245c2848d918db0fd821d22498f4e0a272a&" alt="Application Screenshot">
+<img src="https://cdn.discordapp.com/attachments/1206721383820820553/1225848318836342995/Ekran_goruntusu_2024-01-17_014342.png?ex=66229f36&is=66102a36&hm=25afb2058d74f16ae0903ff8d6d58a4c381300c8ebf3a1a65464b2ca7dc9eb15&" alt="Application Screenshot">
+<img src="https://cdn.discordapp.com/attachments/1206721383820820553/1225848339439030402/Ekran_goruntusu_2024-01-17_193800.png?ex=66229f3b&is=66102a3b&hm=099cc23de1a0b0f9d06d8f0445d9725f570b23c2d67d67e293a313e768e13f58&" alt="Application Screenshot">
+<img src="https://cdn.discordapp.com/attachments/1206721383820820553/1225848351514169435/Ekran_goruntusu_2024-01-17_193955.png?ex=66229f3e&is=66102a3e&hm=bf9924a5801479e78af41dcbd28e30575ad81240d3cba5a062d51e90c017e0b7&" alt="Application Screenshot">
+<img src="https://cdn.discordapp.com/attachments/1206721383820820553/1225848403314085928/Ekran_goruntusu_2024-01-17_014310.png?ex=66229f4a&is=66102a4a&hm=6ba3724fbe3d6f9e5c24b1fbf17fc7a98f678b6994cf3c25a551e079cbbcbf07&" alt="Application Screenshot">
+<img src="https://cdn.discordapp.com/attachments/1206721383820820553/1225848426554724443/Ekran_goruntusu_2024-01-17_014328.png?ex=66229f50&is=66102a50&hm=4132641832c68f4d2de89ac2ceeb0e71a00375526ce8ba865ed659b4542ed792&" alt="Application Screenshot">
+<img src="https://cdn.discordapp.com/attachments/1206721383820820553/1225848435698041013/Ekran_goruntusu_2024-01-17_014319.png?ex=66229f52&is=66102a52&hm=115e45b04dddc83b14eeec17fe930e38f636c976e0f598fbb46f4062fd8bccfd&" alt="Application Screenshot">
+<img src="https://cdn.discordapp.com/attachments/1206721383820820553/1225848447404609556/Ekran_goruntusu_2024-01-17_021324.png?ex=66229f55&is=66102a55&hm=0bfc828c41c393ee755a50d6e00ff3efc4a8404c1e77b257977078b6b11e0a7d&" alt="Application Screenshot">
 <img src="https://camo.githubusercontent.com/d68dcb24f480ccfcd376b6bbedfffec5bbeaf836983ed35636357bb6498bcc30/68747470733a2f2f692e696d6775722e636f6d2f684672797561522e706e67" alt="Application Screenshot">
 
 
