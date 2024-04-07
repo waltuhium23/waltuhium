@@ -142,6 +142,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     t = time.time()
     Obfuscator = Obfuscate(args.file_path, args.output_path)
-    for f in range(15000):  # obfuscate for 3 time u can make 15000 xd
+    for f in range(3):  # obfuscate for 3 time u can make 15000 xd
         Obfuscator.Main()
     print(f"The code obfuscated on {str(time.time() - t)} second\n")
