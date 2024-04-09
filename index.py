@@ -1,4 +1,3 @@
-
 # https://t.me/waltuhium ( offical telegram channel of the Waltuhium )
 # Coded by Waltuh
 # Builder of Waltuhium Grabber
@@ -30,7 +29,7 @@ class Build:
         self.current_path = os.getcwd()
         self.pump = bool()
         self.pumSize = int()  # mb
-        self.PyInstallerCommand = "pyinstaller --onefile --noconsole --clean --noconfirm --upx-dir UPX --version-file AssemblyFile\\version.txt"
+        self.PyInstallerCommand = "pyinstaller --onefile --noconsole --clean --noconfirm "
 
     def CallFuncions(self) -> None:
         try:
@@ -221,12 +220,9 @@ class Build:
 # Entryp point of the program
 if __name__ == "__main__":
     if os.name == "nt":
-        if (sys.version_info.major == 3 and sys.version_info.minor >= 10 and sys.version_info.minor < 12):
+       
             # Create an instance of Build class and call the main building function
             Build().CallFuncions()
-        else:
-            # Displays an error message if Python version is not supported
-            message = "Your Python version is unsupported by Waltuhium. Please use Python 3.10.0 or 3.11.0"
-            ctypes.windll.user32.MessageBoxW(None, ctypes.c_wchar_p(message), "Error", 0x10)
+        
     else:
         print("Only Windows operating systems are supported!")
