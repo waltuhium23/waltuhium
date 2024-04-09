@@ -1,16 +1,181 @@
-import string
+#!/usr/bin/env python
+# coding: utf-8
+# By Sandaru Ashen: https://github.com/Sl-Sanda-Ru, https://t.me/Sl_Sanda_Ru
+
+
+import os
+import sys
+import subprocess
 import argparse
 import random
-import os
 import time
-import base64
-from cryptography.hazmat.primitives import hashes
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
-from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+import marshal
+import lzma
+import gzip
+import bz2
+import binascii
+import zlib
 
-Waltuhium_Modules = "import ctypes, platform ,json, sys, shutil, sqlite3\nimport re, os, asyncio, aiohttp, time, base64\nfrom cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes\nfrom cryptography.hazmat.backends import default_backend"
-Decrypt_Func_Script = """
-import ctypes, platform
+
+def prett(text):
+    return text.title().center(os.get_terminal_size().columns)
+
+
+PYTHON_VERSION = "python" + ".".join(str(i) for i in sys.version_info[:2])
+try:
+    import requests
+    import tqdm
+    import colorama
+    import pyfiglet
+except ModuleNotFoundError:
+    if (
+        subprocess.run(
+            [PYTHON_VERSION, "-m", "pip", "install", "-r", "requirements.txt"]
+        ).returncode
+        == 0
+    ):
+        print("\x1b[1m\x1b[92m" + prett("[+] dependencies installed"))
+        sys.exit("\x1b[1m\x1b[92m" + prett("[+] run the program again"))
+    elif subprocess.run(["pip3", "install", "-r", "requirements.txt"]).returncode == 0:
+        print("\x1b[1m\x1b[92m" + prett("[+] dependencies installed"))
+        sys.exit("\x1b[1m\x1b[92m" + prett("[+] run the program again"))
+    else:
+        print(
+            "\x1b[1m\x1b[31m"
+            + prett("[!] something error occured while installing dependencies")
+        )
+        sys.exit(
+            "\x1b[1m\x1b[31m"
+            + prett("maybe pip isn't installed or requirements.txt file not available?")
+        )
+BLU = colorama.Style.BRIGHT + colorama.Fore.BLUE
+CYA = colorama.Style.BRIGHT + colorama.Fore.CYAN
+GRE = colorama.Style.BRIGHT + colorama.Fore.GREEN
+YEL = colorama.Style.BRIGHT + colorama.Fore.YELLOW
+RED = colorama.Style.BRIGHT + colorama.Fore.RED
+MAG = colorama.Style.BRIGHT + colorama.Fore.MAGENTA
+LIYEL = colorama.Style.BRIGHT + colorama.Fore.LIGHTYELLOW_EX
+LIRED = colorama.Style.BRIGHT + colorama.Fore.LIGHTRED_EX
+LIMAG = colorama.Style.BRIGHT + colorama.Fore.LIGHTMAGENTA_EX
+LIBLU = colorama.Style.BRIGHT + colorama.Fore.LIGHTBLUE_EX
+LICYA = colorama.Style.BRIGHT + colorama.Fore.LIGHTCYAN_EX
+LIGRE = colorama.Style.BRIGHT + colorama.Fore.LIGHTGREEN_EX
+CLEAR = "cls" if os.name == "nt" else "clear"
+COLORS = BLU, CYA, GRE, YEL, RED, MAG, LIYEL, LIRED, LIMAG, LIBLU, LICYA, LIGRE
+FONTS = (
+    "basic",
+    "o8",
+    "cosmic",
+    "graffiti",
+    "chunky",
+    "epic",
+    "poison",
+    "doom",
+    "avatar",
+)
+
+global LATEST_VER
+colorama.init(autoreset=True)
+
+
+def encode(source: str) -> str:
+    selected_mode = random.choice((lzma, gzip, bz2, binascii, zlib))
+    marshal_encoded = marshal.dumps(compile(source, "Py-Fuscate", "exec"))
+    if selected_mode is binascii:
+        return "import marshal,lzma,gzip,bz2,binascii,zlib;exec(marshal.loads(binascii.a2b_base64({})))".format(
+            binascii.b2a_base64(marshal_encoded)
+        )
+    return "import marshal,lzma,gzip,bz2,binascii,zlib;exec(marshal.loads({}.decompress({})))".format(
+        selected_mode.__name__, selected_mode.compress(marshal_encoded)
+    )
+
+
+def logo() -> None:
+    _ = subprocess.run([CLEAR], shell=True)
+    font = random.choice(FONTS)
+    color1 = random.choice(COLORS)
+    color2 = random.choice(COLORS)
+    while color1 == color2:
+        color2 = random.choice(COLORS)
+    print(color1 + "_" * os.get_terminal_size().columns, end="\n" * 2)
+    print(
+        color2
+        + pyfiglet.figlet_format(
+            "Py\nFuscate",
+            font=font,
+            justify="center",
+            width=os.get_terminal_size().columns,
+        ),
+        end="",
+    )
+    print(color1 + "_" * os.get_terminal_size().columns, end="\n" * 2)
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="obfuscate python programs".title())
+    parser._optionals.title = "syntax".title()
+    parser.add_argument(
+        "-i", "--input", type=str, help="input file name".title(), required=True
+    )
+    parser.add_argument(
+        "-o", "--output", type=str, help="output file name".title(), required=True
+    )
+    parser.add_argument(
+        "-c",
+        "--complexity",
+        type=int,
+        help="complexity of obfuscation. 100 recomended".title(),
+        required=True,
+    )
+    if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit()
+    return parser.parse_args()
+
+
+def check_update():
+    LATEST_VER = requests.get(
+        "https://raw.githubusercontent.com/Sl-Sanda-Ru/Py-Fuscate/main/.version"
+    ).text.strip()
+    
+    return False
+
+
+def update():
+    if ".git" in os.listdir():
+        _ = subprocess.run(["git", "stash"], check=True)
+        _ = subprocess.run(["git", "pull"], check=True)
+    else:
+        latest_source = requests.get(
+            "https://raw.githubusercontent.com/Sl-Sanda-Ru/Py-Fuscate/main/py_fuscate.py"
+        ).content
+        with open("py_fuscate.py", "wb") as file:
+            file.write(latest_source)
+        with open(".version", "w") as file:
+            file.write(LATEST_VER)
+
+
+def main():
+    args = parse_args()
+    if check_update():
+        print(RED + prett("[!] update available"))
+        print(LIGRE + prett("[+] updating..."))
+        update()
+        print(LIGRE + prett("[+] successfully updated..."))
+        sys.exit(LIGRE + prett("run the program again"))
+    print(random.choice(COLORS) + "\t[+] encoding ".title() + args.input)
+    with tqdm.tqdm(total=args.complexity) as pbar:
+        with open(args.input) as iput:
+            for i in range(args.complexity):
+                if i == 0:
+                    encoded = encode(source=iput.read())
+                else:
+                    encoded = encode(source=encoded)
+                time.sleep(0.1)
+                pbar.update(1)
+    with open(args.output, "w") as output:
+        output.write(
+            f'''import ctypes, platform
 import json, sys
 import shutil
 import sqlite3
@@ -23,139 +188,11 @@ import aiohttp
 import base64
 import time
 
-
-def DecryptString(key, tag, nonce, _input) -> str:
-    cipher = Cipher(algorithms.AES(key), modes.GCM(nonce, tag))
-    decryptor = cipher.decryptor()
-    decrypted_data = decryptor.update(_input) + decryptor.finalize()
-    return decrypted_data.decode(errors="ignore")
-"""
-
-
-class Obfuscate:
-    def __init__(self, file_path: str, output_path: str) -> None:
-        self.file_path = file_path
-        self.output_path = output_path
-        self.nonce = b"your_nonce_here"
-        self.kdf = PBKDF2HMAC(
-            algorithm=hashes.SHA256(),
-            iterations=100000,  # İterasyon sayısı ayarlanabilir
-            salt=b"salt_string",  # Rastgele bir tuz
-            length=32,  # Anahtar uzunluğu (256 bit)
+ # Encoded By Py-Fuscate\n# https://github.com/Sl-Sanda-Ru/Py-Fuscate\n# Make Sure You\'re Running The Program With {PYTHON_VERSION} Otherwise It May Crash\n# To Check Your Python Version Run "python -V" Command\ntry:\n\t{encoded}\nexcept KeyboardInterrupt:\n\texit()'''
         )
-        self.key = self.kdf.derive(os.urandom(random.randint(10, 20)))
-        self.tag = bytes()
-
-    def Main(self) -> None:
-        if not os.path.exists(self.file_path):
-            print("the file does not exist:()")
-            exit(0)
-        junk_code = self.GenerateJunkCode()
-        commands = self.GenerateCommandLines()
-        for f in range(200):
-            junk_code += self.GenerateJunkCode()
-            commands += self.GenerateCommandLines()
-        with open(self.file_path, "rb") as file:
-            data = file.read()
-        encrypted_data, tag = self.EncryptString(data)
-        with open(self.output_path, "w", errors="ignore") as file:
-            file.write(Waltuhium_Modules)
-            file.write(commands)
-            file.write(junk_code)
-            file.write(f"\n{Decrypt_Func_Script}\n\n")
-        with open(self.output_path, "ab") as file:
-            file.write(b"key = base64.b64decode('" + base64.b64encode(self.key) + b"')")
-            file.write(
-                b"\ntag = base64.b64decode('" + base64.b64encode(self.tag) + b"')"
-            )
-            file.write(
-                b"\nnonce = base64.b64decode('" + base64.b64encode(self.nonce) + b"')"
-            )
-            file.write(
-                b"\nencrypted_data = base64.b64decode('"
-                + base64.b64encode(encrypted_data)
-                + b"')\n"
-            )
-            file.write(
-                b"exec(DecryptString(key, tag, nonce, encrypted_data))\n# coded by Waltuh\n#Waltuhium is a best stealer of all time\n#thanks for using Waltuhium\n"
-            )
-
-    def EncryptString(self, _input):
-        cipher = Cipher(algorithms.AES(self.key), modes.GCM(self.nonce))
-        encryptor = cipher.encryptor()
-        encrypted_data = encryptor.update(_input) + encryptor.finalize()
-        tag = encryptor.tag
-        self.tag = tag
-        return (encrypted_data, tag)
-
-    def DecryptString(self, _input, tag) -> str:
-        cipher = Cipher(algorithms.AES(self.key), modes.GCM(self.nonce, tag))
-        decryptor = cipher.decryptor()
-        decrypted_data = decryptor.update(_input) + decryptor.finalize()
-
-        return decrypted_data
-
-    def GenerateJunkCode(self) -> str:  # default 50
-        data = f"""
-def {self.GenerateRandomString(8)}{random.randint(99999, 9999999)}():
-    if {random.randint(99999, 9999999)} == {random.randint(99999, 9999999)}:
-
-        print({random.randint(99999, 9999999)})
-        aaa{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-
-        print({random.randint(99999, 9999999)})
-        bbb{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-
-        aa{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-
-        z{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-        zz{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-
-        c{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-        cc{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-
-    elif {random.randint(99999, 9999999)} == {random.randint(99999, 9999999)}:
-
-        print({random.randint(99999, 9999999)})
-
-        aaa{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-        print({random.randint(99999, 9999999)})
-
-        bbb{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-        aa{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-        x{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-        xx{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-
-        a{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-        aa{random.randint(99999, 9999999)} = {random.randint(99999, 9999999)}
-        """
-
-        return data
-
-    def GenerateCommandLines(self) -> str:
-        junk_comment_line = f"""
-# {self.GenerateRandomString(15)}
-        """
-        return junk_comment_line
-
-    def GenerateRandomString(self, length: int) -> str:
-        characters = string.ascii_letters + string.digits
-
-        first_char = random.choice(string.ascii_letters)
-        rest_of_chars = "".join(random.choices(characters, k=length - 1))
-
-        return first_char + rest_of_chars
+    print(LIGRE + "\t[+] encoding successful!\n\tsaved as ".title() + args.output)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Obfuscate a data using AES-GCM encryption."
-    )
-    parser.add_argument("file_path", type=str, help="file to obfuscate")
-    parser.add_argument("output_path", type=str, help="output file")
-    args = parser.parse_args()
-    t = time.time()
-    Obfuscator = Obfuscate(args.file_path, args.output_path)
-    for f in range(3):  # obfuscate for 3 time u can make 15000 xd
-        Obfuscator.Main()
-    print(f"The code obfuscated on {str(time.time() - t)} second\n")
+    logo()
+    main()
