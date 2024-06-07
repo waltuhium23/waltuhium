@@ -130,8 +130,8 @@
 <img src="https://i.imgur.com/DlzVCGb.png" alt="Application Screenshot">
 <img src="https://i.imgur.com/TZRHcIX.png" alt="Application Screenshot">
 <img src="https://i.imgur.com/YCTYXNo.png" alt="Application Screenshot">
-<img src="https://i.imgur.com/EbdxRed.png" alt="Application Screenshot">
 <img src="https://i.imgur.com/TZRHcIX.png" alt="Application Screenshot">
+<img src="https://i.imgur.com/EbdxRed.png" alt="Application Screenshot">
 <img src="https://camo.githubusercontent.com/d68dcb24f480ccfcd376b6bbedfffec5bbeaf836983ed35636357bb6498bcc30/68747470733a2f2f692e696d6775722e636f6d2f684672797561522e706e67" alt="Application Screenshot">
 
 
